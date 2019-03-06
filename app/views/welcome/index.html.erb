@@ -1,5 +1,13 @@
+<%= react_component 'MaterialComponentList' %>
+
 <h2>Hello World</h2>
 
 <p>
 The time is now: <%= Time.now %>
 </p>
+
+<h2>Hello from React:</h2>
+
+<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+
+<HelloWorld greeting="Hello from jsx." />
